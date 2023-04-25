@@ -4,8 +4,6 @@ public class Address {
 
 	private int streetNumber;
 	private String area;
-	
-	
 
 	public Address(int streetNumber, String area) {
 		super();

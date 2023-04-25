@@ -17,9 +17,10 @@ public class MapAndFlatMapTest {
 		System.out.println("Map");
 		empLst.stream().map(e -> e.getAddresses()).forEach(System.out::print);
 		System.out.println("\nFlat Map");
-		empLst.stream().flatMap(e -> e.getAddresses().stream()).map( v-> v+", ").forEach(System.out::print);
+		empLst.stream().flatMap(e -> e.getAddresses().stream()).map( v -> v+", ").
+		forEach(System.out::print);
 		System.out.println("\nUnique Flat Map");
-		empLst.stream().flatMap(e -> e.getAddresses().stream()).map( v-> v+", ").
+		empLst.stream().flatMap(e -> e.getAddresses().stream()).map( v -> v+", ").
 		collect(Collectors.toSet()).forEach(System.out::print);
 		
 	}
